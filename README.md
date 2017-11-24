@@ -11,4 +11,5 @@ docker build -t vasttools .
 
 docker run -ti -v ~/myVASTDB:/VASTDB vasttools /bin/bash
 
+~/myVASTDB is the directory where VASTDB files are stored
 
