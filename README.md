@@ -1,4 +1,4 @@
-# VAST-TOOLS_docker
+# VAST-TOOLS in Docker
 Docker for running [VAST-TOOLS](https://github.com/vastgroup/vast-tools)
 
 
