@@ -1,16 +1,16 @@
 # VAST-TOOLS_docker
-Docker for running VAST-TOOLS
+Docker for running [VAST-TOOLS](https://github.com/vastgroup/vast-tools)
 
 
 ## Build image
 
-docker build -t vasttools .
+    docker build -t vasttools .
 
 Build arguments are provided for VAST-TOOLS and BOWTIE
 
 ## Run image
 
-docker run -d -v ~/myVASTDB:/VASTDB -v ~/myshared:/share -t myvast vasttools tail -f /dev/null
+    docker run -d -v ~/myVASTDB:/VASTDB -v ~/myshared:/share -t myvast vasttools tail -f /dev/null
 
 ~/myVASTDB is the directory where VASTDB files are stored
 
@@ -20,5 +20,5 @@ The command above keeps container running under the name myvast
 
 Example running command:
 
-docker exec myvast  vast-tools align /share/reads/SRR493366.fastq -sp Hsa --expr -o /share/out/test
+    docker exec myvast  vast-tools align /share/reads/SRR493366.fastq -sp Hsa --expr -o /share/out/test
 
