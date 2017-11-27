@@ -34,9 +34,14 @@ RUN cd /usr/local/vast-tools-${VASTTOOLS_VERSION}; ln -s /VASTDB .
 
 RUN cd /usr/local/vast-tools-${VASTTOOLS_VERSION}; ./install.R
 
+# Let's put in PATH
+RUN cd /usr/local/bin; ln -s ../vast-tools-${VASTTOOLS_VERSION}/vast-tools .
+
 # Clean cache
 RUN apt-get clean
 RUN set -x; rm -rf /var/lib/apt/lists/*
 
+# Shared mounting
+VOLUME /share
 
 
