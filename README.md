@@ -10,7 +10,7 @@ Build arguments are provided for VAST-TOOLS and BOWTIE
 
 ## Run image
 
-    docker run -d -v ~/myVASTDB:/VASTDB -v ~/myshared:/share -t myvast vasttools tail -f /dev/null
+    docker run -d -v ~/myVASTDB:/VASTDB -v ~/myshared:/share --name myvast vasttools tail -f /dev/null
 
 ~/myVASTDB is the directory where VASTDB files are stored
 
