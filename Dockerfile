@@ -4,7 +4,7 @@ FROM rocker/r-ver:3.3.1
 MAINTAINER Toni Hermoso Pulido <toni.hermoso@crg.eu>
 
 ARG BOWTIE_VERSION=1.2.1.1
-ARG VASTTOOLS_VERSION=2.0.1
+ARG VASTTOOLS_VERSION=2.0.2
 
 # Install external dependencies 
 RUN apt-get update -qq && apt-get install -y --no-install-recommends python curl libcurl4-openssl-dev libssl-dev libsqlite3-dev libxml2-dev qpdf git
